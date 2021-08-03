@@ -14,3 +14,7 @@ Resources used in this project:
 - [MVVM]
 - [Unit tests: Expresso, JUnit, Mokito]
 - [Jetpack]
+
+Libs
+- [Retrofit2]
+- [Okhttp3]
