@@ -1,0 +1,126 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#68E3F2FD"
+    tools:context=".view.SignInActivity">
+
+    <ImageView
+        android:id="@+id/login_img_wave"
+        android:layout_width="wrap_content"
+        android:layout_height="300dp"
+        android:rotation="205"
+        android:scaleType="centerCrop"
+        android:src="@drawable/ic_wave"
+        android:translationX="28dp"
+        android:translationY="-80dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ImageView
+        android:id="@+id/login_img_logo"
+        android:layout_width="80dp"
+        android:layout_height="80dp"
+        android:layout_marginTop="120dp"
+        android:scaleType="centerCrop"
+        android:src="@drawable/safebox"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/container_modal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="16dp"
+        app:cardCornerRadius="4dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/login_img_logo">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:padding="10dp">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:fontFamily="cursive"
+                android:text="@string/app_name"
+                android:textAlignment="center"
+                android:textColor="@android:color/black"
+                android:textSize="@dimen/large_title"
+                android:textStyle="bold" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:fontFamily="@font/yantramanav_black"
+                android:text="@string/enter_your_account"
+                android:textAlignment="center"
+                android:textColor="@android:color/black"
+                android:textSize="@dimen/normal_title"
+                android:textStyle="bold" />
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="@string/email">
+
+                <com.google.android.material.textfield.TextInputEditText
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:backgroundTint="#DCDCDC"
+                    android:drawableEnd="@drawable/ic_baseline_email_24"
+                    android:fontFamily="@font/yantramanav"
+                    android:inputType="textEmailAddress" />
+
+            </com.google.android.material.textfield.TextInputLayout>
+
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="@string/password">
+
+                <com.google.android.material.textfield.TextInputEditText
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:backgroundTint="#DCDCDC"
+                    android:drawableEnd="@drawable/ic_baseline_lock_24"
+                    android:fontFamily="@font/yantramanav"
+                    android:inputType="textPassword" />
+
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="end"
+                android:layout_marginTop="8dp"
+                android:layout_marginEnd="4dp"
+                android:text="@string/forgot_pass" />
+
+            <Button
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:layout_margin="32dp"
+                android:background="@drawable/buttom_primary"
+                android:fontFamily="@font/yantramanav_black"
+                android:text="@string/login"
+                android:textColor="@android:color/white" />
+
+        </LinearLayout>
+    </androidx.cardview.widget.CardView>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

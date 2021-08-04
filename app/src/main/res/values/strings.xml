@@ -1,3 +1,13 @@
 <resources>
     <string name="app_name">Safe Box</string>
+    <string name="enter_your_account">Entre com sua conta</string>
+    <string name="email">Email*</string>
+    <string name="password">Senha*</string>
+    <string name="forgot_pass">Esqueceu sua senha?</string>
+    <string name="login">Login</string>
+    <string name="dont_have_account">Não tem uma conta?</string>
+    <string name="register_now">Cadastrar Agora</string>
+    <string name="name">Nome*</string>
+    <string name="terms_text"><u>Li e aceito os termos e condições</u></string>
+    <string name="already_account">Já tem uma conta?</string>
 </resources>
