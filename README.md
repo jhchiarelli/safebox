@@ -11,8 +11,10 @@ Resources used in this project:
 
 - [Android Studio]
 - [Kotlin]
-- [MVVM]
 - [Unit tests: Expresso, JUnit, Mokito]
+
+Next Step
+- [MVVM]
 - [Jetpack]
 
 Libs
